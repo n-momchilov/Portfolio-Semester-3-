@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go IT</title>
+    <link rel="stylesheet" href="styleProject.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <div class="triangle-left"></div>
+        <div class="logo">momchilov</div>
+        <nav>
+            <div class="nav-links">
+                <a href="Home.html">Home</a>
+                <a href="aboutMe.html">About me</a>
+                <div class="dropdown" id="projectsDropdown">
+                    <a href="javascript:void(0);" onclick="toggleDropdown()">Projects</a>
+                    <ul class="dropdown-content">
+                        <li><a href="GO_IT.html" onclick="closeDropdown()">GO IT</a></li>
+                        <li><a href="ProjectsYNOT.html" onclick="closeDropdown()">YNOT</a></li>
+                        <li><a href="Personal_Project.html" onclick="closeDropdown()">Personal Project</a></li>
+                        <li><a href="NSswift.html" onclick="closeDropdown()">NS SWIFT</a></li>
+                    </ul>
+                </div>
+                <a href="LO.html">Learning Outcomes</a>
+            </div>
+            
+        </nav>
+    </div>
+
+    <section class="hero">
+
+        <div class="circle"></div>
+
+
+
+        <div class="hero-content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2 class="headline">: NS SWIFT</h2>
+
+        </div>
+
+
+
+    </section>
+
+    <div class="falling-star" id="fallingStar">★</div>
+
+
+    <div class="learning-section">
+        <h2 class="project-title">: NS SWIFT</h2>
+        <div class="title-underline"></div>
+        <div class="intro-content">
+            <p class="intro-text">A story about love fear and inspiration. The year is 2050 and a group of scientists managed to create the first affordable teleport used by the public, with almost no side effects. follow the story of our scientists through their path to success and glory.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    
+        <h3 class="section-header">INTRODUCTION</h3>
+        <div class="header-underline"></div>
+        <div class="content-grid">
+            <div>
+                <p class="label">Applied outcomes:</p>
+                <p class="label">Roles</p>
+                <p class="label">Client</p>
+            </div>
+            <div>
+                <p class="value">design/interaction/Sketching/stop-motion animation</p>
+                <p class="value">UI/UX Design/Research</p>
+                <p class="value">Fontys</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Design Section -->
+    <div class="learning-section">
+        <h2 class="project-title">Design</h2>
+        <div class="title-underline"></div>
+        <img src="NS_Swift.png" class="moon-image" >
+    </div>
+
+    <!-- Research Section -->
+    <div class="learning-section">
+        <h2 class="project-title">Research</h2>
+        <div class="title-underline"></div>
+        
+        <div class="research-images">
+            <img src="Teleport_Creation.png" alt="Research 1" class="research-image">
+            <img src="Research_Diagram.jpg" alt="Research 2" class="research-image">
+        </div>
+
+        <h3 class="section-header">Evidence/Contribution</h3>
+        <div class="header-underline"></div>
+        <ul class="evidence-list">
+            <li><a href="https://stichtingfontys-my.sharepoint.com/:w:/r/personal/528609_student_fontys_nl/Documents/Document.docx?d=w4eb0a3dbbcfb4c90b61753ef7bb52b37&csf=1&web=1&e=w2u4Jh"
+                target="_blank">The creation of teleport
+            </a></li>
+            <li><a href="https://stichtingfontys-my.sharepoint.com/:w:/r/personal/528609_student_fontys_nl/Documents/DISCOVER%20PHASE%20RESEARCH%20SPECIFICS%202.docx?d=w0d011d8fe27a4abd8c4c694fe20b7cec&csf=1&web=1&e=Zr3Mr2"
+                target="_blank">Lego Model
+            </a></li>
+            
+            
+            
+        </ul>
+    </div>
+
+    <!-- Reflection Section -->
+    <div class="learning-section">
+        <h2 class="project-title">Reflection</h2>
+        <div class="title-underline"></div>
+        <p class="reflection-text">The project taught me that working only is not the most important thing while doing a project you need to enjoy the small things and have more fun in the process. </p>
+
+        <h3 class="section-header">Attached files</h3>
+        <div class="header-underline"></div>
+        <ul class="file-list">
+            <li><a href="https://www.figma.com/design/iiqEIt40GDhoubbC1gzX45/Untitled?node-id=0-1&t=VR2tuToU2msuWxLr-1"
+                    target="_blank">The Future
+                </a></li>
+            
+                <li><p><a href="javascript:void(0);" onclick="showImage('Futuristic_Portal.webp')">The future</a></p></li>
+                <li><p><a href="javascript:void(0);" onclick="showImage('LEgo.webp')">Lego Model</a></p></li>
+        </ul>
+    </div>
+    <section class="learning-outcomes">
+        <h2>Learning Outcomes for NS SWIFT</h2>
+        <ul>
+            <li><a href="LO.html#LO3">LO3</a>: Creative iterations.</li>
+        </ul>
+    </section>
+
+<!-- Modal Structure -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImage" class="modal-content" alt="3D Model">
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

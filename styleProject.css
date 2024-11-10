@@ -1,0 +1,529 @@
+:root {
+    --turquoise: #9e7474;
+    --dark: #1a1a1a;
+    
+    
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  
+  body {
+    background: linear-gradient(135deg, var(--turquoise) 0%,  #40E0D0 100%);
+    min-height: 150vh; 
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  .nav-container {
+    position: relative;
+    height: 60px;
+  }
+  
+  .skills {
+    position: relative;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-20%);
+    z-index: 1;
+    color: #000000;
+    font-weight: 600;
+  }
+  
+  .skills li {
+    list-style: none;
+    margin: 4rem 0;
+    font-size: 1.2rem;
+    z-index: 1;
+    background-color: #40E0D0;
+    padding: 0.5rem 1rem;
+    /* Adds padding to control the size of the background */
+  
+    border-radius: 8px;
+    /* Optional: Adds rounded corners */
+    max-width: fit-content;
+  
+  
+  }
+  
+  .triangle-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 900px;
+    background-color: rgb(55, 212, 199);
+    clip-path: polygon(0 0, 100% 0, 50% 50%, 0% 100%);
+    z-index: 1;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--dark);
+    font-weight: bold;
+    z-index: 3;
+    color: aliceblue;
+    background-color: #000000;
+    padding: 1.5rem 1rem;
+    /* Adds padding to control the size of the background */
+  
+    border-radius: 8px;
+    /* Optional: Adds rounded corners */
+    max-width: fit-content;
+  
+  }
+  
+  nav {
+    background-color: var(--dark);
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    position: relative;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .hero {
+    min-height: 100vh;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    
+    
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Position it right below .hero */
+    left: 0;
+    width: 100%;
+    height: 50vh; /* Adjust this to extend the background as needed */
+    background: inherit; /* Matches the background of .hero */
+    z-index: -2; /* Places it behind all content */
+  }
+  
+  .circle {
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .star {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .hero-content {
+    color: #000000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    background: url('cyan-moon-removebg.png') no-repeat center;
+    background-size: cover; /* Makes the background image cover the entire element */
+    background-position: center; /* Centers the image within the element */
+    height: 100vh;
+    
+    
+    
+  }
+  
+  
+  .headline {
+    
+   /* background-color: #40E0D0; /* Background color for the text */
+    color: rgb(255, 255, 255); /* Text color */
+    font-size: 5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    padding: 2px 6px; /* Adjust padding to control spacing around the text */
+  }
+  
+  .subheadline {
+    
+     
+    color: rgb(255, 255, 255);
+    font-size: 3rem; 
+    padding: 2px 6px;
+    margin-top: 4px;
+    
+  }
+  
+  
+  
+  .about-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+    bottom: -20rem;
+    left: 48rem;
+    max-width: 300px;
+    text-align: center;
+    color: aliceblue;
+    user-select: none;
+   
+    
+  }
+  
+  .menu-button {
+    background: var(--turquoise);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+      
+    }
+  
+    .hero-content h2 {
+      font-size: 1.8rem;
+    }
+  
+    
+  
+    .skills {
+      position: relative;
+      left: 0;
+      top: 0;
+      transform: none;
+      margin-top: 250px;
+    }
+  
+    .triangle-left {
+      width: 150px;
+    }
+    
+  }
+  
+  .falling-star {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    z-index: 4;
+    animation: glow 2s infinite;
+    
+    
+  }
+  
+  .falling-star.fall {
+    top: 70%;
+    opacity: 0.8;
+  }
+
+  /* kvadrat LO */
+
+  .learning-section {
+    background-color: #40E0D0;
+    padding: 2rem;
+    margin: 2rem auto;
+    position: relative;
+    max-width: 1000px;
+    color: white;
+}
+
+.project-title {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.title-underline {
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.intro-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.intro-text {
+    color: white;
+    flex: 1;
+    margin: 0;
+}
+
+.learning-section .moon-image {
+    max-width: 800px !important; /* Force width to 150px */
+    height: auto !important; /* Maintain aspect ratio */
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+
+
+
+
+.section-header {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.header-underline {
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.label {
+    color: white;
+    font-weight: bold;
+}
+
+.value {
+    color: black;
+}
+
+
+
+.image-dimensions {
+    position: absolute;
+    right: 30px;
+    top: 282px;
+    font-size: 0.8rem;
+    color: white;
+    background: rgba(0, 123, 255, 0.8);
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.placeholder-image {
+    width: 100%;
+    height: 3px;
+    margin: 1.5rem 0;
+}
+
+.research-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.research-image {
+    width: 48%;
+    height: 150px;
+}
+
+.evidence-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.evidence-list li {
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.evidence-list li::before {
+    content: "-";
+    margin-right: 0.5rem;
+}
+
+.reflection-text {
+    color: white;
+    
+    margin: 1rem 0;
+}
+
+.file-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.file-list li {
+    color: white;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.file-list li::before {
+    content: "📄";
+    margin-right: 0.5rem;
+}
+
+/* Modal background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+}
+
+/* Modal content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+}
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown content styling */
+  .dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 0;
+  }
+  
+  /* Dropdown links */
+  .dropdown-content li {
+    list-style: none;
+  }
+  
+  .dropdown-content li a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: #575757;
+  }
+  /* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 0;
+}
+
+/* Dropdown links */
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content li a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: #575757;
+}
+@keyframes fallDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(300px); /* Adjust this value to control the downward distance */
+    }
+  }
+  
+  .fall {
+    animation: fallDown 1s ease forwards;
+  }
+  
+  
+
+  
+  
